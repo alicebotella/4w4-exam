@@ -1,0 +1,32 @@
+.lescours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    
+    article {
+
+        height: 150px;
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        border: 2px solid black;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+
+        }
+    }
+}
+
+.test {
+    background-color: pink;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}

@@ -39,9 +39,9 @@ get_header();
 							
 						<?php endif; ?>
 					<?php endif; ?>	
-                    <!-- # de la session -->
+                    <!-- # de la session - enlever après -->
 					<h2><?php echo $tPropriété['session'] ?></h2> 
-					<section <?php echo class_composant($tPropriété['session']) ?>>
+					<section class="test" <?php echo class_composant($tPropriété['session']) ?>> 
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['session'], ['Web', 'Jeu', 'Spécifique']) ) : 
