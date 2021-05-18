@@ -12,7 +12,7 @@
     specifique.addEventListener("click", specanim());
 
 
-    //test - ajout bg css
+    //test 1 - ajout bg css
     webanim(); {
         web.style.backgroundColor = 'palegreen';
     }
@@ -32,5 +32,11 @@
     specanim(); {
         web.style.backgroundColor = 'pink';
     }
+
+
+
+
+    //test 2
+    document.getElementById("web").innerHTML = document.style.backgroundColor = 'pink';
 
 })()

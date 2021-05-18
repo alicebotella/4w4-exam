@@ -36,7 +36,7 @@ get_header();
 		
 						<?php endif; ?>
 					
-                    <!-- # de la session - enlever après -->
+                    <!-- # de la session -->
                     <section class="session" <?php echo class_composant($tPropriété['session']) ?>> 
 					<h2><?php echo $tPropriété['session'] ?></h2> 
 					

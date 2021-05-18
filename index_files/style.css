@@ -1602,7 +1602,7 @@ La barre du millieu
   display: flex;
   flex-direction: column;
   margin: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   align-items: center;
   justify-content: space-around;
   flex: 1 1 0;
@@ -1642,6 +1642,12 @@ La barre du millieu
 
 .session:nth-of-type(5) article:nth-of-type(5) {
   border: 2px dotted black;
+}
+
+@media (min-width: 800px) {
+  .session {
+    width: 1200px;
+  }
 }
 
 @media (min-width: 1200px) {

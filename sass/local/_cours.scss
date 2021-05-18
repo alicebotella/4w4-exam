@@ -23,7 +23,7 @@
             display: flex;
             flex-direction:column; // l'écriture
             margin: 10px;
-            border: 2px solid black;
+            border: 1px solid black;
             align-items: center;
             justify-content: space-around;
             flex: 1 1 0; //tout mettre proportionnel
@@ -67,6 +67,13 @@ $border: 2px dotted black;
         border: $border
     }
 
+}
+
+///////////////////////////////////// TABLET
+@include tablet {
+    .session {
+        width: 1200px;
+    }
 }
 
 //////////////////////////////////// desktop
