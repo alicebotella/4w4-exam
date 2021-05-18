@@ -1592,7 +1592,6 @@ La barre du millieu
 
 .lescours .session {
   width: 800px;
-  background-color: palegreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1606,6 +1605,7 @@ La barre du millieu
   border: 2px solid black;
   align-items: center;
   justify-content: space-around;
+  flex: 1 1 0;
 }
 
 .lescours .session article p {
@@ -1659,7 +1659,6 @@ La barre du millieu
   }
   .lescours .session {
     width: 1600px;
-    background-color: palegreen;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1678,5 +1677,25 @@ La barre du millieu
     display: flex;
     transform: rotate(0deg);
   }
+}
+
+.web {
+  background-color: palegreen;
+}
+
+.jeu {
+  background-color: paleturquoise;
+}
+
+.imagerie {
+  background-color: palevioletred;
+}
+
+.conception {
+  background-color: peachpuff;
+}
+
+.specifique {
+  background-color: pink;
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,12 +31,9 @@ get_header();
                 convertirTableau($tPropriété);
 				//print_r($tPropriété);
 				if ($tPropriété['session'] != $precedent): 
-					if ("XXXXXX" != $precedent)	: ?>
-
-            
+					if ("XXXXXX" != $precedent)	: ?>   
 						</section>
-                        
-							
+		
 						<?php endif; ?>
 					
                     <!-- # de la session - enlever après -->

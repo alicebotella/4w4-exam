@@ -13,13 +13,12 @@
     
     .session {  
         width: 800px;
-        background-color: palegreen; //reperage
+        //background-color: palegreen; //reperage
         display: flex;
         flex-direction:row;
         justify-content: space-between;
 
         article {
-
             height: 200px;
             display: flex;
             flex-direction:column; // l'écriture
@@ -27,6 +26,7 @@
             border: 2px solid black;
             align-items: center;
             justify-content: space-around;
+            flex: 1 1 0; //tout mettre proportionnel
 
             p {
                 transform: rotate(-90deg);
@@ -86,7 +86,6 @@ $border: 2px dotted black;
         
         .session {
             width: 1600px;
-            background-color: palegreen; //reperage
             display: flex;
             flex-direction:row;
             justify-content: space-between;
@@ -108,4 +107,25 @@ $border: 2px dotted black;
             }
         }
     }
+}
+
+//test
+.web {
+    background-color: palegreen;
+}
+
+.jeu {
+    background-color: paleturquoise;
+}
+
+.imagerie {
+    background-color: palevioletred;
+}
+
+.conception {
+    background-color: peachpuff;
+}
+
+.specifique {
+    background-color: pink;
 }
