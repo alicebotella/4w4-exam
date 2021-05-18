@@ -10,8 +10,6 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
-	
-///category-cours
 
 		<?php if ( have_posts() ) : ?>
 
@@ -41,7 +39,7 @@ get_header();
 					<?php endif; ?>	
                     <!-- # de la session - enlever après -->
 					<h2><?php echo $tPropriété['session'] ?></h2> 
-					<section class="test" <?php echo class_composant($tPropriété['session']) ?>> 
+					<section class="session" <?php echo class_composant($tPropriété['session']) ?>> 
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['session'], ['Web', 'Jeu', 'Spécifique']) ) : 
@@ -52,10 +50,11 @@ get_header();
 						else :		
 						get_template_part( 'template-parts/content', 'cours-article' ); 
 				endif;	
-				$precedent = $tPropriété['session']; //avoir un seul # de session
+				$precedent = $tPropriété['session']; //avoir un seul # de session - A GARDER
 			endwhile;?>
 			</section> <!-- fin section cours -->
 		<?php endif; ?>
+
 	
 	</main><!-- #main -->
 

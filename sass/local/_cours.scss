@@ -1,32 +1,65 @@
 .lescours {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction:column;
+    margin: 2rem;
+
+    h2 {
+        align-items: left;
+        background-color: pink; //reperage
+    }
     
-    article {
-
-        height: 150px;
+    .session {
+        width: 1400px;
+        background-color: palegreen; //reperage
         display: flex;
-        flex-direction:column;
-        margin: 5px;
-        border: 2px solid black;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction:row-reverse;
+        justify-content: space-between;
 
-        p {
+        article {
+
+            height: 150px;
             display: flex;
+            flex-direction:column; // l'écriture
+            margin: 10px;
+            border: 2px solid black;
             align-items: center;
-            justify-content: center;
-            margin: 5px;
+            justify-content: space-around;
 
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px;
+            }
         }
     }
 }
 
-.test {
-    background-color: pink;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+$border: 2px dotted black;
+//Cours à option
+.session:nth-of-type(4) { //4e session
+    article:nth-of-type(2) { //web
+        border: $border
+    }
+    article:nth-of-type(3) { //imagerie 2d/3d
+        border: $border
+    }
+}
+
+.session:nth-of-type(5) { //5e session
+    article:nth-of-type(2) { //web
+        border: $border
+    }
+    article:nth-of-type(3) { //jeu
+        border: $border
+    }
+    article:nth-of-type(4) { //jeu
+        border: $border
+    }
+    article:nth-of-type(5) { //jeu
+        border: $border
+    }
+
 }
