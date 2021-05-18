@@ -1579,31 +1579,62 @@ La barre du millieu
 .lescours {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
+  margin: 2rem;
 }
 
-.lescours article {
+.lescours h2 {
+  align-items: left;
+  background-color: pink;
+}
+
+.lescours .session {
+  width: 1400px;
+  background-color: palegreen;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.lescours .session article {
   height: 150px;
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 10px;
   border: 2px solid black;
   align-items: center;
   justify-content: space-around;
 }
 
-.lescours article p {
+.lescours .session article p {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px;
 }
 
-.test {
-  background-color: pink;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.session:nth-of-type(4) article:nth-of-type(2) {
+  border: 2px dotted black;
+}
+
+.session:nth-of-type(4) article:nth-of-type(3) {
+  border: 2px dotted black;
+}
+
+.session:nth-of-type(5) article:nth-of-type(2) {
+  border: 2px dotted black;
+}
+
+.session:nth-of-type(5) article:nth-of-type(3) {
+  border: 2px dotted black;
+}
+
+.session:nth-of-type(5) article:nth-of-type(4) {
+  border: 2px dotted black;
+}
+
+.session:nth-of-type(5) article:nth-of-type(5) {
+  border: 2px dotted black;
 }
 /*# sourceMappingURL=style.css.map */

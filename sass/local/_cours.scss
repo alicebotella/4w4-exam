@@ -7,19 +7,20 @@
 
     h2 {
         align-items: left;
-        background-color: pink; //reperage
+        font-size: 3rem;
+        margin: 1rem;
     }
     
-    .session {
-        width: 1400px;
+    .session {  
+        width: 800px;
         background-color: palegreen; //reperage
         display: flex;
-        flex-direction:row-reverse;
+        flex-direction:row;
         justify-content: space-between;
 
         article {
 
-            height: 150px;
+            height: 200px;
             display: flex;
             flex-direction:column; // l'écriture
             margin: 10px;
@@ -28,10 +29,14 @@
             justify-content: space-around;
 
             p {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 5px;
+                transform: rotate(-90deg);
+            }
+            p:nth-of-type(2) {
+                display: none;
+            }
+
+            a {
+                display: none;
             }
         }
     }
@@ -62,4 +67,45 @@ $border: 2px dotted black;
         border: $border
     }
 
+}
+
+//////////////////////////////////// desktop
+@include desktop {
+    .lescours {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction:column;
+        margin: 2rem;
+    
+        h2 {
+            align-items: left;
+            font-size: 3rem;
+            margin-right: 1rem;
+        }
+        
+        .session {
+            width: 1600px;
+            background-color: palegreen; //reperage
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+
+            article {
+                height: 150px; 
+                
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px;
+                    transform: rotate(0deg);
+                }
+                a, p:nth-of-type(2) {
+                    display: flex;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
 }

@@ -32,14 +32,17 @@ get_header();
 				//print_r($tPropriété);
 				if ($tPropriété['session'] != $precedent): 
 					if ("XXXXXX" != $precedent)	: ?>
+
+            
 						</section>
-						<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique'])) : ?>
+                        
 							
 						<?php endif; ?>
-					<?php endif; ?>	
+					
                     <!-- # de la session - enlever après -->
+                    <section class="session" <?php echo class_composant($tPropriété['session']) ?>> 
 					<h2><?php echo $tPropriété['session'] ?></h2> 
-					<section class="session" <?php echo class_composant($tPropriété['session']) ?>> 
+					
 				<?php endif ?>	
 
 				<?php if (in_array($tPropriété['session'], ['Web', 'Jeu', 'Spécifique']) ) : 

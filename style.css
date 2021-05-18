@@ -1586,19 +1586,20 @@ La barre du millieu
 
 .lescours h2 {
   align-items: left;
-  background-color: pink;
+  font-size: 3rem;
+  margin: 1rem;
 }
 
 .lescours .session {
-  width: 1400px;
+  width: 800px;
   background-color: palegreen;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .lescours .session article {
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -1608,10 +1609,15 @@ La barre du millieu
 }
 
 .lescours .session article p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
+  transform: rotate(-90deg);
+}
+
+.lescours .session article p:nth-of-type(2) {
+  display: none;
+}
+
+.lescours .session article a {
+  display: none;
 }
 
 .session:nth-of-type(4) article:nth-of-type(2) {
@@ -1636,5 +1642,41 @@ La barre du millieu
 
 .session:nth-of-type(5) article:nth-of-type(5) {
   border: 2px dotted black;
+}
+
+@media (min-width: 1200px) {
+  .lescours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .lescours h2 {
+    align-items: left;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .lescours .session {
+    width: 1600px;
+    background-color: palegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .lescours .session article {
+    height: 150px;
+  }
+  .lescours .session article p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transform: rotate(0deg);
+  }
+  .lescours .session article a, .lescours .session article p:nth-of-type(2) {
+    display: flex;
+    transform: rotate(0deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
